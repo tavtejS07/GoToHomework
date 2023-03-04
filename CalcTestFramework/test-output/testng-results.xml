@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-04T14:40:32 EST" name="Default suite" finished-at="2023-03-04T14:40:53 EST" duration-ms="20788">
+  <suite started-at="2023-03-04T15:03:01 EST" name="Default suite" finished-at="2023-03-04T15:03:30 EST" duration-ms="28786">
     <groups>
     </groups>
-    <test started-at="2023-03-04T14:40:32 EST" name="Default test" finished-at="2023-03-04T14:40:53 EST" duration-ms="20788">
+    <test started-at="2023-03-04T15:03:01 EST" name="Default test" finished-at="2023-03-04T15:03:30 EST" duration-ms="28786">
       <class name="calculatorTests.BasicOperations">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:33 EST" name="openUrl" finished-at="2023-03-04T14:40:41 EST" duration-ms="8659" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:01 EST" name="openUrl" finished-at="2023-03-04T15:03:11 EST" duration-ms="9465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="additionTest()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:41 EST" name="additionTest" finished-at="2023-03-04T14:40:42 EST" duration-ms="538" status="PASS">
+        <test-method signature="additionTest()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:11 EST" name="additionTest" finished-at="2023-03-04T15:03:11 EST" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- additionTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:42 EST" name="quitBrowser" finished-at="2023-03-04T14:40:42 EST" duration-ms="115" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:11 EST" name="quitBrowser" finished-at="2023-03-04T15:03:11 EST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:42 EST" name="openUrl" finished-at="2023-03-04T14:40:47 EST" duration-ms="5163" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:11 EST" name="openUrl" finished-at="2023-03-04T15:03:17 EST" duration-ms="5793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="divisionTest()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:47 EST" name="divisionTest" finished-at="2023-03-04T14:40:47 EST" duration-ms="449" status="PASS">
+        <test-method signature="divisionTest()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:17 EST" name="divisionTest" finished-at="2023-03-04T15:03:17 EST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- divisionTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:47 EST" name="quitBrowser" finished-at="2023-03-04T14:40:48 EST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:17 EST" name="quitBrowser" finished-at="2023-03-04T15:03:18 EST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:48 EST" name="openUrl" finished-at="2023-03-04T14:40:53 EST" duration-ms="5158" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:18 EST" name="openUrl" finished-at="2023-03-04T15:03:23 EST" duration-ms="5781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="subtractionTest()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:53 EST" name="subtractionTest" finished-at="2023-03-04T14:40:53 EST" duration-ms="426" status="PASS">
+        <test-method signature="multiplicationTest()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:23 EST" name="multiplicationTest" finished-at="2023-03-04T15:03:24 EST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplicationTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:24 EST" name="quitBrowser" finished-at="2023-03-04T15:03:24 EST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:24 EST" name="openUrl" finished-at="2023-03-04T15:03:29 EST" duration-ms="5385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="subtractionTest()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:29 EST" name="subtractionTest" finished-at="2023-03-04T15:03:30 EST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtractionTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@4bb33f74]" started-at="2023-03-04T14:40:53 EST" name="quitBrowser" finished-at="2023-03-04T14:40:53 EST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@759d26fb]" started-at="2023-03-04T15:03:30 EST" name="quitBrowser" finished-at="2023-03-04T15:03:30 EST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

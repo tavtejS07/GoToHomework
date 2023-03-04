@@ -6,8 +6,8 @@
       <class name="calculatorTests.BasicOperations">
         <methods>
           <include name="quitBrowser"/>
+          <include name="multiplicationTest"/>
           <include name="openUrl"/>
-          <include name="additionTest"/>
         </methods>
       </class> <!-- calculatorTests.BasicOperations -->
     </classes>
