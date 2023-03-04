@@ -75,6 +75,18 @@ public class BasicOperations {
 		Assert.assertEquals("3", value, "Value mismatch test failed");
 	}
 	
+	@Test
+	public void multiplicationTest() {
+		testDriver.findElement(By.xpath("/html/body/div/div[3]/button[7]")).click();
+		rpt.clickMul();
+		testDriver.findElement(By.xpath("/html/body/div/div[3]/button[4]")).click();
+		rpt.clickEqual();
+		
+		String value = testDriver.findElement(By.id("output")).getText();
+		//System.out.println(value);
+		Assert.assertEquals("28", value, "Value mismatch test failed");
+	}
+	
 	@AfterMethod
 	public void quitBrowser() {
 		testDriver.quit();
