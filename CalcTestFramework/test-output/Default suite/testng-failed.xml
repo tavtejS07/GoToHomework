@@ -5,6 +5,7 @@
     <classes>
       <class name="calculatorTests.BasicOperations">
         <methods>
+          <include name="quitBrowser"/>
           <include name="openUrl"/>
           <include name="additionTest"/>
         </methods>
