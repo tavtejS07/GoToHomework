@@ -142,7 +142,7 @@ public class BasicOperations {
 		System.out.println("input provided = " + input);
 		System.out.println("output received = " + output);
 		
-		Assert.assertEquals("15", output, "Value mismatch test failed");
+		Assert.assertEquals("24", output, "Value mismatch test failed");
 	}
 	
 	@AfterMethod
