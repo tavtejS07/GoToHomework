@@ -43,8 +43,13 @@ public class BasicOperations {
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[12]")).click();
 		//clickEqual(testDriver);
 		
-		String value = testDriver.findElement(By.id("output")).getText();
-		Assert.assertEquals("9", value, "Value mismatch test failed");
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		
+		Assert.assertEquals("9", output, "Value mismatch test failed");
 	}
 	
 	
@@ -60,8 +65,13 @@ public class BasicOperations {
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[14]")).click();
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[2]")).click();
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[12]")).click();
-		String value = testDriver.findElement(By.id("output")).getText();
-		Assert.assertEquals("4", value, "Value mismatch test failed");
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		
+		Assert.assertEquals("4", output, "Value mismatch test failed");
 	}
 	
 	//divide 9 by 3
@@ -81,9 +91,13 @@ public class BasicOperations {
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[3]")).click();
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[12]")).click();
 		
-		String value = testDriver.findElement(By.id("output")).getText();
-		//System.out.println(value);
-		Assert.assertEquals("3", value, "Value mismatch test failed");
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		
+		Assert.assertEquals("3", output, "Value mismatch test failed");
 	}
 	
 	//Multiply 7 and 4
@@ -97,9 +111,38 @@ public class BasicOperations {
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[7]")).click();
 		//testDriver.findElement(By.xpath("/html/body/div/div[3]/button[4]")).click();
 		
-		String value = testDriver.findElement(By.id("output")).getText();
-		//System.out.println(value);
-		Assert.assertEquals("28", value, "Value mismatch test failed");
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		
+		Assert.assertEquals("28", output, "Value mismatch test failed");
+	}
+	
+	//test BODMAS functionality
+	//use expression 10-1+3*4/2 -- Expected result = 15
+	@Test
+	public void bodmasTest() {
+		num.one();
+		num.zero();
+		rpt.clickSub();
+		num.one();
+		rpt.clickAdd();
+		num.three();
+		rpt.clickMul();
+		num.four();
+		rpt.clickDiv();
+		num.two();
+		rpt.clickEqual();
+		
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		
+		Assert.assertEquals("15", output, "Value mismatch test failed");
 	}
 	
 	@AfterMethod
