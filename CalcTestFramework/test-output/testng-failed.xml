@@ -6,7 +6,7 @@
       <class name="calculatorTests.BasicOperations">
         <methods>
           <include name="quitBrowser"/>
-          <include name="bodmasTest"/>
+          <include name="deleteTest"/>
           <include name="openUrl"/>
         </methods>
       </class> <!-- calculatorTests.BasicOperations -->
