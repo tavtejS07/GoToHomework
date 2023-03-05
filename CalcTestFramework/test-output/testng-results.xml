@@ -1,17 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="111" total="121" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-05T00:58:07 EST" name="Default suite" finished-at="2023-03-05T00:58:16 EST" duration-ms="8363">
+  <suite started-at="2023-03-05T16:59:41 EST" name="Suite" finished-at="2023-03-05T17:00:48 EST" duration-ms="66957">
     <groups>
     </groups>
-    <test started-at="2023-03-05T00:58:07 EST" name="Default test" finished-at="2023-03-05T00:58:16 EST" duration-ms="8363">
+    <test started-at="2023-03-05T16:59:41 EST" name="additionTests" finished-at="2023-03-05T16:59:52 EST" duration-ms="10688">
       <class name="calculatorTests.BasicOperations">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@7a419da4]" started-at="2023-03-05T00:58:07 EST" name="openUrl" finished-at="2023-03-05T00:58:15 EST" duration-ms="7436" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@581ac8a8]" started-at="2023-03-05T16:59:41 EST" name="openUrl" finished-at="2023-03-05T16:59:51 EST" duration-ms="9884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="deleteTest()[pri:0, instance:calculatorTests.BasicOperations@7a419da4]" started-at="2023-03-05T00:58:15 EST" name="deleteTest" finished-at="2023-03-05T00:58:16 EST" duration-ms="773" status="FAIL">
+        <test-method signature="additionTest()[pri:0, instance:calculatorTests.BasicOperations@581ac8a8]" started-at="2023-03-05T16:59:51 EST" name="additionTest" finished-at="2023-03-05T16:59:52 EST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additionTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@581ac8a8]" started-at="2023-03-05T16:59:52 EST" name="quitBrowser" finished-at="2023-03-05T16:59:52 EST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- additionTests -->
+    <test started-at="2023-03-05T16:59:52 EST" name="bodmasTest" finished-at="2023-03-05T16:59:59 EST" duration-ms="6451">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@201a4587]" started-at="2023-03-05T16:59:52 EST" name="openUrl" finished-at="2023-03-05T16:59:58 EST" duration-ms="5615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="bodmasTest()[pri:0, instance:calculatorTests.BasicOperations@201a4587]" started-at="2023-03-05T16:59:58 EST" name="bodmasTest" finished-at="2023-03-05T16:59:59 EST" duration-ms="718" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Value mismatch test failed expected [15] but found [24]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Value mismatch test failed expected [15] but found [24]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at calculatorTests.BasicOperations.bodmasTest(BasicOperations.java:138)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bodmasTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@201a4587]" started-at="2023-03-05T16:59:59 EST" name="quitBrowser" finished-at="2023-03-05T16:59:59 EST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- bodmasTest -->
+    <test started-at="2023-03-05T16:59:59 EST" name="decimalValueTest" finished-at="2023-03-05T17:00:05 EST" duration-ms="6102">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@47d9a273]" started-at="2023-03-05T16:59:59 EST" name="openUrl" finished-at="2023-03-05T17:00:04 EST" duration-ms="5456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="decimalValueTest()[pri:0, instance:calculatorTests.BasicOperations@47d9a273]" started-at="2023-03-05T17:00:04 EST" name="decimalValueTest" finished-at="2023-03-05T17:00:05 EST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- decimalValueTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@47d9a273]" started-at="2023-03-05T17:00:05 EST" name="quitBrowser" finished-at="2023-03-05T17:00:05 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- decimalValueTest -->
+    <test started-at="2023-03-05T17:00:05 EST" name="multiplicationTest" finished-at="2023-03-05T17:00:11 EST" duration-ms="5875">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@2dc54ad4]" started-at="2023-03-05T17:00:05 EST" name="openUrl" finished-at="2023-03-05T17:00:10 EST" duration-ms="5301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="multiplicationTest()[pri:0, instance:calculatorTests.BasicOperations@2dc54ad4]" started-at="2023-03-05T17:00:10 EST" name="multiplicationTest" finished-at="2023-03-05T17:00:11 EST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplicationTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@2dc54ad4]" started-at="2023-03-05T17:00:11 EST" name="quitBrowser" finished-at="2023-03-05T17:00:11 EST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- multiplicationTest -->
+    <test started-at="2023-03-05T17:00:11 EST" name="negativeMultiplicationsTest" finished-at="2023-03-05T17:00:17 EST" duration-ms="6226">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@428640fa]" started-at="2023-03-05T17:00:11 EST" name="openUrl" finished-at="2023-03-05T17:00:16 EST" duration-ms="5299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="negativeValueMulTest()[pri:0, instance:calculatorTests.BasicOperations@428640fa]" started-at="2023-03-05T17:00:16 EST" name="negativeValueMulTest" finished-at="2023-03-05T17:00:17 EST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeValueMulTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@428640fa]" started-at="2023-03-05T17:00:17 EST" name="quitBrowser" finished-at="2023-03-05T17:00:17 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- negativeMultiplicationsTest -->
+    <test started-at="2023-03-05T17:00:17 EST" name="errorAnalysisTest" finished-at="2023-03-05T17:00:23 EST" duration-ms="6221">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@4efac082]" started-at="2023-03-05T17:00:17 EST" name="openUrl" finished-at="2023-03-05T17:00:22 EST" duration-ms="5229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="errorAnalysisTest1()[pri:0, instance:calculatorTests.BasicOperations@4efac082]" started-at="2023-03-05T17:00:22 EST" name="errorAnalysisTest1" finished-at="2023-03-05T17:00:23 EST" duration-ms="874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorAnalysisTest1 -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@4efac082]" started-at="2023-03-05T17:00:23 EST" name="quitBrowser" finished-at="2023-03-05T17:00:23 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- errorAnalysisTest -->
+    <test started-at="2023-03-05T17:00:23 EST" name="subtractionTest" finished-at="2023-03-05T17:00:30 EST" duration-ms="6635">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@506ae4d4]" started-at="2023-03-05T17:00:23 EST" name="openUrl" finished-at="2023-03-05T17:00:29 EST" duration-ms="6084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="subtractionTest()[pri:0, instance:calculatorTests.BasicOperations@506ae4d4]" started-at="2023-03-05T17:00:29 EST" name="subtractionTest" finished-at="2023-03-05T17:00:30 EST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtractionTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@506ae4d4]" started-at="2023-03-05T17:00:30 EST" name="quitBrowser" finished-at="2023-03-05T17:00:30 EST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- subtractionTest -->
+    <test started-at="2023-03-05T17:00:30 EST" name="divisionTest" finished-at="2023-03-05T17:00:36 EST" duration-ms="5969">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@52b1beb6]" started-at="2023-03-05T17:00:30 EST" name="openUrl" finished-at="2023-03-05T17:00:35 EST" duration-ms="5398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="divisionTest()[pri:0, instance:calculatorTests.BasicOperations@52b1beb6]" started-at="2023-03-05T17:00:35 EST" name="divisionTest" finished-at="2023-03-05T17:00:36 EST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divisionTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@52b1beb6]" started-at="2023-03-05T17:00:36 EST" name="quitBrowser" finished-at="2023-03-05T17:00:36 EST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- divisionTest -->
+    <test started-at="2023-03-05T17:00:36 EST" name="deleteTest" finished-at="2023-03-05T17:00:42 EST" duration-ms="6110">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@73e9cf30]" started-at="2023-03-05T17:00:36 EST" name="openUrl" finished-at="2023-03-05T17:00:41 EST" duration-ms="5371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="deleteTest()[pri:0, instance:calculatorTests.BasicOperations@73e9cf30]" started-at="2023-03-05T17:00:41 EST" name="deleteTest" finished-at="2023-03-05T17:00:42 EST" duration-ms="624" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Value mismatch test failed expected [92] but found [ERR]]]>
@@ -23,7 +194,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
-at calculatorTests.BasicOperations.deleteTest(BasicOperations.java:175)
+at calculatorTests.BasicOperations.deleteTest(BasicOperations.java:169)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +229,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteTest -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@7a419da4]" started-at="2023-03-05T00:58:16 EST" name="quitBrowser" finished-at="2023-03-05T00:58:16 EST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@73e9cf30]" started-at="2023-03-05T17:00:42 EST" name="quitBrowser" finished-at="2023-03-05T17:00:42 EST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- calculatorTests.BasicOperations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- deleteTest -->
+    <test started-at="2023-03-05T17:00:42 EST" name="infinityTest" finished-at="2023-03-05T17:00:48 EST" duration-ms="6302">
+      <class name="calculatorTests.BasicOperations">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:calculatorTests.BasicOperations@3527942a]" started-at="2023-03-05T17:00:42 EST" name="openUrl" finished-at="2023-03-05T17:00:48 EST" duration-ms="5687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="infinityTest()[pri:0, instance:calculatorTests.BasicOperations@3527942a]" started-at="2023-03-05T17:00:48 EST" name="infinityTest" finished-at="2023-03-05T17:00:48 EST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infinityTest -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:calculatorTests.BasicOperations@3527942a]" started-at="2023-03-05T17:00:48 EST" name="quitBrowser" finished-at="2023-03-05T17:00:48 EST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- calculatorTests.BasicOperations -->
+    </test> <!-- infinityTest -->
+    <test started-at="2023-03-05T17:00:48 EST" name="readInputDisplayTest" finished-at="2023-03-05T17:00:48 EST" duration-ms="0">
+    </test> <!-- readInputDisplayTest -->
+  </suite> <!-- Suite -->
 </testng-results>
