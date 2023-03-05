@@ -27,9 +27,23 @@ public class RepeatButtons {
 	@FindBy(xpath = "/html/body/div/div[3]/button[11]")
 	WebElement delBtn;
 	
+	@FindBy(xpath = "//*[@id=\"expression\"]")
+	WebElement inputScreen;
+	
+	@FindBy(id = "output")
+	WebElement outputScreen;
+	
 	public RepeatButtons(WebDriver testDriver) {
 		this.testDriver = testDriver;
 		PageFactory.initElements(testDriver, this);
+	}
+	
+	public String readInput() {
+		return inputScreen.getAttribute("value");
+	}
+	
+	public String readOutput() {
+		return outputScreen.getText();
 	}
 	
 	public void clickEqual() {

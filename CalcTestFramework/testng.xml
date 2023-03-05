@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="additionTests">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "additionTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="bodmasTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "bodmasTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="decimalValueTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "decimalValueTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="multiplicationTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "multiplicationTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+   <test thread-count="5" name="negativeMultiplicationsTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "negativeValueMulTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+  <test thread-count="5" name="errorAnalysisTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "errorAnalysisTest1" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="subtractionTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "subtractionTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="divisionTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "divisionTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+  
+  <test thread-count="5" name="deleteTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "deleteTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+    <test thread-count="5" name="infinityTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "infinityTest" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+  
+      <test thread-count="5" name="readInputDisplayTest">
+    <classes>
+    	<class name="calculatorTests.BasicOperations">
+    		<methods>
+    			<include name = "readInputDisplay" />
+    		</methods>
+    	</class>
+    </classes>
+  </test> <!-- calculatorTests -->
+  
+</suite> <!-- Suite -->
