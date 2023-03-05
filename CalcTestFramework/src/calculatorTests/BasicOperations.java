@@ -145,16 +145,41 @@ public class BasicOperations {
 		Assert.assertEquals("24", output, "Value mismatch test failed");
 	}
 	
+	@Test
+	public void deleteTest(){
+		num.nine();
+		num.zero();
+		rpt.clickAdd();
+		rpt.clickMul();
+		num.two();
+		rpt.clickEqual();
+		
+		String input = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+		String output = testDriver.findElement(By.id("output")).getText();
+		
+		System.out.println("input provided = " + input);
+		System.out.println("output received = " + output);
+		Assert.assertEquals("ERR", output, "Value mismatch test failed");
+		
+		
+		if(output.contains("ERR")) {
+			rpt.clickDel();
+			rpt.clickDel();
+			num.two();
+			rpt.clickEqual();
+			
+			String input1 = testDriver.findElement(By.xpath("//*[@id=\"expression\"]")).getAttribute("value");
+			String output1 = testDriver.findElement(By.id("output")).getText();
+			System.out.println("new input = " + input1);
+			System.out.println("new output = " + output1);
+			Assert.assertEquals("ERR", output1, "Value mismatch test failed"); //this assertion if fails will pass the test proving that delete works and new value is calculated
+		}
+		
+	}
+	
 	@AfterMethod
 	public void quitBrowser() {
 		testDriver.quit();
 	}
-	
-	
-	//chromeDriver.get("http://output.jsbin.com/hudape/1/");
-
-//	public static void main(String[] args) {
-//		chromeDriver.findElement(By.xpath("/html/body/div/div[3]/button[6]")).click();
-//	}
 
 }
